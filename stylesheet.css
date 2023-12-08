@@ -1,0 +1,169 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+img.nav {
+    width:20px;
+}
+
+header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo {
+    margin-left: 20px;
+}
+
+img.header {
+    width:100px;
+}
+
+.portrait {
+    position:relative;
+    float: right;
+    width: 260px;
+    bottom: 95%;
+    right:10%;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #080808;
+    font-weight: bold;
+    display: block; 
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav li:hover,
+nav a:hover {
+    background-color: #a09f9f;
+}
+
+audio {
+    position: relative;
+    float:right;
+    margin: 20px;
+}
+
+.grid-container {
+    max-width: 100%; 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 500px 1fr;; 
+    grid-gap: 20px;
+    align-items: stretch;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: left;
+    height: 100%;
+}
+
+.bg-image {
+    background-image: url('background-index.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+@keyframes colorChange {
+    0% { color: #333; }
+    25% { color: #ff0000; }
+    50% { color: #00ff00; }
+    75% { color: #0000ff; }
+    100% { color: #333; }
+}
+
+.grid-item h1 {
+    font-size: 4em; 
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    animation: colorChange 5s infinite;
+    font-family: 'Lobster', sans-serif;
+}
+
+.grid-item p {
+    font-size: 50px; 
+    color: rgb(10, 10, 10);
+    margin: 20px;
+    font-family: 'Anton', sans-serif;
+    padding-bottom: 3px;
+}
+
+footer {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens (e.g., phones) */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 10px 0;
+    }
+
+    .portrait {
+        width: 100%; /* Make the portrait image take full width on small screens */
+        max-width: 100px;
+        float: right;
+        position: relative;
+        bottom: 2%;
+        
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    audio {
+        position: static;
+        margin: 20px 0;
+    }
+    .grid-item h1 {
+        font-size: 2em; 
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 10px; 
+        animation: colorChange 5s infinite;
+        font-family: 'Lobster', sans-serif;
+    }
+    
+    .grid-item p {
+        font-size: 25px; 
+        color: rgb(10, 10, 10);
+        margin: 20px;
+        font-family: 'Anton', sans-serif;
+        /* padding-bottom: 3px; */
+    }
+
+}

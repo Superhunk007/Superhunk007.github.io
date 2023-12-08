@@ -1,4 +1,0 @@
-Name:   Yunfeng Zhao
-Student ID: W0484013
-CommitID: 968f6ba
-URL: https://superhunk007.github.io/
