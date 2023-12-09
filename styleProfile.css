@@ -25,15 +25,6 @@ img.header {
     width:100px;
 }
 
-.portrait {
-    position:relative;
-    float: right;
-    width: 260px;
-    bottom: 95%;
-    right:10%;
-    border-radius: 50%;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -57,58 +48,46 @@ nav a:hover {
     background-color: #a09f9f;
 }
 
-audio {
-    position: relative;
-    float:right;
+.introduction {
     margin: 20px;
 }
 
+.p1 {
+    font-size: 50px; 
+    color: rgb(10, 10, 10);
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 5px;
+}
+
+.p2 {
+    font-size: 1em;
+}
+
 .grid-container {
-    max-width: 100%; 
+    max-width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 500px 1fr;; 
+    grid-template-columns: repeat(4, 1fr); /* Divide the container into 4 equal columns */
+    grid-template-rows: auto; /* Adjust as needed based on the content inside the grids */
     grid-gap: 20px;
     align-items: stretch;
 }
 
 .grid-item {
-    padding: 20px;
-    text-align: left;
-    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 10px;
 }
 
-.bg-image {
-    background-image: url('background-index.png'); 
-    background-size: cover;
-    background-position: center;
-    height: 600px;
+.grid-item img {
+    max-width: 100%;
+    height: auto;
 }
 
-@keyframes colorChange {
-    0% { color: #333; }
-    25% { color: #ff0000; }
-    50% { color: #00ff00; }
-    75% { color: #0000ff; }
-    100% { color: #333; }
-}
-
-.grid-item h1 {
-    font-size: 4em; 
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px; 
-    animation: colorChange 5s infinite;
-    font-family: 'Lobster', sans-serif;
-}
-
-.grid-item p {
-    font-size: 50px; 
-    color: rgb(10, 10, 10);
+audio {
+    position: relative;
+    float:right;
     margin: 20px;
-    font-family: 'Anton', sans-serif;
-    padding-bottom: 3px;
 }
 
 footer {
@@ -127,14 +106,6 @@ footer {
         margin: 10px 0;
     }
 
-    .portrait {
-        width: 100%; /* Make the portrait image take full width on small screens */
-        max-width: 100px;
-        float: right;
-        position: relative;
-        bottom: 2%;
-        
-    }
 
     nav ul {
         flex-direction: column;
@@ -145,25 +116,22 @@ footer {
         margin: 10px 0;
     }
 
+    .grid-container {
+        grid-template-columns: 1fr; /* On smaller screens, revert to a single column layout */
+    }
+
+    .grid-item {
+        grid-template-rows: auto auto; /* Adjust for smaller screens */
+    }
+
+    .grid-item img {
+        width: 100%; /* Make images take full width on small screens */
+    }
+
     audio {
         position: static;
         margin: 20px 0;
     }
-    .grid-item h1 {
-        font-size: 2em; 
-        color: #333;
-        font-weight: bold;
-        margin-bottom: 10px; 
-        animation: colorChange 5s infinite;
-        font-family: 'Lobster', sans-serif;
-    }
-    
-    .grid-item p {
-        font-size: 25px; 
-        color: rgb(10, 10, 10);
-        margin: 20px;
-        font-family: 'Anton', sans-serif;
-        /* padding-bottom: 3px; */
-    }
+
 
 }
