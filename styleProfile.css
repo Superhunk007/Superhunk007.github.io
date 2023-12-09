@@ -110,12 +110,6 @@ strong {
     background-color: #0056b3;
 }
 
-audio {
-    position: relative;
-    float:right;
-    margin: 20px;
-}
-
 footer {
     font-weight: bold;
     margin-left: 20px;
@@ -152,11 +146,6 @@ footer {
 
     .grid-item img {
         width: 100%; /* Make images take full width on small screens */
-    }
-
-    audio {
-        position: static;
-        margin: 20px 0;
     }
 
 
