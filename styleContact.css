@@ -54,6 +54,7 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    padding: 0;
 }
 
 .centered-image {
@@ -65,7 +66,7 @@ nav a:hover {
 
 .contact-form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 20px;
     background-color: rgba(244, 244, 244, 0.8);
     border-radius: 10px;
@@ -120,16 +121,6 @@ nav a:hover {
     100% {
         transform: translateX(0);
     }
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(244, 244, 244, 0.8); /* Add a semi-transparent background color for better readability */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
 }
 
 .contact-form .name-container {
