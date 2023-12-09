@@ -34,14 +34,73 @@
         </nav>
     </header>
     <hr>
-    
+
+    <div class="background-container">
+        <div class="contact-form">
+            <img class="centered-image" src="contact.gif" alt="Contact Image">
+            <h2>Welcome to Contact Me!</h2>
+            <form action="#" method="post">
+                <div class="name-container">
+                    <div class="name-input">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" name="first_name" required>
+                    </div>
+                
+                    <div class="name-input">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" name="last_name" required>
+                    </div>
+                </div>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" maxlength="10" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="secret">Secret</option>
+                </select>
+
+                <label>Interests:</label>
+                <div class="interests-container">
+                    <input type="checkbox" id="python" name="interests[]" value="python">
+                    <label for="python">Python</label>
+
+                    <input type="checkbox" id="security" name="interests[]" value="security">
+                    <label for="security">Internet Security</label>
+
+                    <input type="checkbox" id="database" name="interests[]" value="database">
+                    <label for="database">Database</label>
+
+                    <input type="checkbox" id="webdev" name="interests[]" value="webdev">
+                    <label for="webdev">Web Development</label>
+
+                    <input type="checkbox" id="admin" name="interests[]" value="admin">
+                    <label for="admin">Windows Administration</label>
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br><br>
+                <center>
+                <button type="submit">Submit</button>
+                </center>
+            </form>
+        </div>
+    </div>
     <audio autoplay loop>
         <source src="music.mp3" type="audio/mp3">
     </audio>
-    <br><br><hr><br>
+
+    <br><br><hr><br><br>
     <footer >
         &copy; Copyright reserved.  Yunfeng Zhao  | 2023
     </footer>
+    <br><br>
 
     
 </body>

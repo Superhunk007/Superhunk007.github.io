@@ -2,6 +2,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
+
 }
 
 img.nav {
@@ -48,6 +49,145 @@ nav a:hover {
     background-color: #a09f9f;
 }
 
+.background-container {
+    background-image: url('background-contact.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(244, 244, 244, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    position: relative;
+    z-index: 1; 
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 40px;
+    animation: colorChange 5s infinite alternate, moveLetters 2s infinite;
+
+}
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+    14% {
+        color: orange;
+    }
+    29% {
+        color: yellow;
+    }
+    43% {
+        color: green;
+    }
+    57% {
+        color: blue;
+    }
+    71% {
+        color: indigo;
+    }
+    86% {
+        color: violet;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@keyframes moveLetters {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(244, 244, 244, 0.8); /* Add a semi-transparent background color for better readability */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.contact-form .name-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form .name-input {
+    flex: 0.5;
+    margin-right: 3px; 
+}
+
+.contact-form .name-input input[type="text"] {
+    width: 200px;
+}
+
+.contact-form .interests-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-form .interests-container input[type="checkbox"] {
+    margin-left: 25px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form select {
+    width: 500px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.contact-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
 
 
 footer {
@@ -75,6 +215,9 @@ footer {
         margin: 10px 0;
     }
 
+    .contact-form {
+        margin-top: 30px;
+    }
     
    
 }
