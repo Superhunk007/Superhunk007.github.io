@@ -54,7 +54,7 @@ nav a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    padding: 0;
+    padding: 40px;
 }
 
 .centered-image {
@@ -65,7 +65,7 @@ nav a:hover {
 }
 
 .contact-form {
-    max-width: 600px;
+    max-width: 850px;
     margin: 10px auto;
     padding: 20px;
     background-color: rgba(244, 244, 244, 0.8);
@@ -134,7 +134,7 @@ nav a:hover {
 }
 
 .contact-form .name-input input[type="text"] {
-    width: 200px;
+    width: 150px;
 }
 
 .contact-form .interests-container {
@@ -150,6 +150,7 @@ nav a:hover {
     display: block;
     margin: 10px 0 5px;
     font-weight: bold;
+    padding-left: 10px;
 }
 
 .contact-form input[type="text"],
@@ -157,8 +158,8 @@ nav a:hover {
 .contact-form input[type="email"],
 .contact-form textarea,
 .contact-form select {
-    width: 500px;
-    padding: 8px;
+    width: 575px;
+    padding: 12px;
     margin-bottom: 10px;
     box-sizing: border-box;
 }
@@ -206,8 +207,44 @@ footer {
         margin: 10px 0;
     }
 
+    .background-container {
+        padding: 20px;
+    }
+
     .contact-form {
+        max-width: 100%;
         margin-top: 30px;
+        padding: 10px;
+    }
+
+    .contact-form .name-container {
+        flex-direction: column;
+    }
+
+    .contact-form .name-input {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .contact-form .name-input input[type="text"] {
+        width: 100%;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="tel"],
+    .contact-form input[type="email"],
+    .contact-form textarea,
+    .contact-form select {
+        width: 100%;
+    }
+
+    .contact-form .interests-container input[type="checkbox"] {
+        margin-left: 0;
+    }
+
+    .contact-form label {
+        padding-left: 0;
     }
     
    
